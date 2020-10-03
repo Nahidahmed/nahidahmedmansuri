@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discussions about project management" />
+    <meta name="keywords" content="project management,pmp,agile, scrum" />
+    <title><%= siteName %> | <%= someVariable %></title>
+    <%- include('./partials/headerlinks.ejs') %>
+  </head>
+  <body>
+    <!-- Page Navigation -->
+    <%- include('./partials/navigation.ejs') %>
+
+    <!-- Page Content -->
+    <%- include(`../pages/${template}`) %>
+
+    <!-- Script -->
+    <%-include('./partials/script.ejs') %>
+  </body>
+</html>

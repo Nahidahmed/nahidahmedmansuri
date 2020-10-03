@@ -1,0 +1,33 @@
+{
+  "name": "nahidahmedmansuri",
+  "version": "1.0.0",
+  "description": "Website of Nahid Ahmed Mansuri",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --ignore feedback.json server.js"
+  },
+  "keywords": [
+    "Project",
+    "Manager",
+    "PMP",
+    "Agile"
+  ],
+  "author": "Nahid Ahmed Mansuri",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2"
+  }
+}

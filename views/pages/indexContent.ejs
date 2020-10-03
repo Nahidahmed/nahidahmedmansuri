@@ -1,0 +1,89 @@
+<div>
+  <section id="home">
+    <a
+      href="https://www.youracclaim.com/badges/4a2a2137-c65a-417a-bbf1-9f7a1f7bba64/public_url"
+      target="_blank"
+      >Nahid Ahmed Mansuri</a
+    >
+  </section>
+  <section id="about">
+    <div>
+      <h1 style="text-align: center">About me</h1>
+      <blockquote style="letter-spacing: 1px; text-transform: initial">
+        A PMP certified and certified agile scrum master professional having more than 15 years of
+        experience in the software industry. Over the course of my experience I got opportunity to
+        work in various domains starting from health care to current fascinating world of e-commerce
+        applications where everyday there is something new to learn. Starting career as a software
+        developer, the initial experiences made me believe that having core technical skills are all
+        it takes to develop applications for customers to engage. However, fortunately with varied
+        experiences and addition of new people in my career path have forced the drift in my
+        mindset. I now realize the importance of other aspects of customer engagement - knowing your
+        customers, learning what they are looking for, using metrics to understand customer and his
+        needs and thus drive a customer to the technical platform which is ready to serve.
+        Holistically, the software industry is not just about technical capabilities. Its a mix of
+        science and art. It also needs a project management which does the balancing act and makes
+        sure customer get what they are looking for. Welcome to my world where i share my
+        experiences with you and we learn mutually!
+      </blockquote>
+    </div>
+  </section>
+  <section id="achievements">
+    <div class="achievements">
+      <h1 style="text-align: center">Achievements</h1>
+      <ul style="letter-spacing: 1px; text-transform: initial; text-decoration: none">
+        <% keyachievements.forEach(function(achievement) {%>
+        <li>
+          <a href="<%= achievement.certlink %>" target="_blank"><%= achievement.title%></a>
+        </li>
+        <%})%>
+      </ul>
+    </div>
+  </section>
+  <section id="careerTimeline">
+    <div>
+      <h1 style="text-align: center">Career Timeline</h1>
+      <div class="career-timeline" id="timeline-tooltip"></div>
+    </div>
+  </section>
+  <section id="contact">
+    <div>
+      <h1 style="text-align: center">Stay Social</h1>
+      <div class="socialMedias">
+        <a href="https://twitter.com/NahidAhmed" class="twitter" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/nahmedmansuri/" class="instagram" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/nahidahmedmansuri/" class="linkedin" target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a href="https://api.whatsapp.com/send?phone=+919395555366" class="whatsapp"
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="quote-container" id="quote-container">
+  <div class="quote-text">
+    <i class="fas fa-quote-left"></i>
+    <span id="quote"></span>
+  </div>
+  <div class="quote-author">
+    <span id="author"></span>
+  </div>
+  <div class="button-container">
+    <button class="twitter-button" id="twitter" title="Tweet It!">
+      <i class="fab fa-twitter"></i>
+    </button>
+    <button id="new-quote">New Quote</button>
+  </div>
+</div>
+<!-- Loader -->
+<div class="loader" id="loader"></div>
+
+<div class="svgLoader" hidden>
+  <img src="assets/loader.svg" alt="Loader" />
+</div>

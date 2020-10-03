@@ -1,0 +1,20 @@
+{
+  "achievements": [
+    {
+      "title": "Project Managment Professional (PMP) \u00AE - PMI",
+      "certlink": "certificates/pmi.pdf"
+    },
+    {
+      "title": "Certified ScrumMaster \u00AE - ScrumAlliance",
+      "certlink": "certificates/CSM.pdf"
+    },
+    {
+      "title": "Fundamentals of Digital Marketing - Google Digital Garage",
+      "certlink": "certificates/Fundamentals of Digital Marketing.pdf"
+    },
+    {
+      "title": "Google Analytics for Beginner",
+      "certlink": "https://analytics.google.com/analytics/academy/certificate/SCAFmdCIRkqJtGwmjcQJFw"
+    }
+  ]
+}
