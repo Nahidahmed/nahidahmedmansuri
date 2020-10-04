@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session');
 const app = express();
 
 const port = 3050;
+const createError = require('http-errors');
 
 const routes = require('./routes');
 
@@ -50,6 +51,21 @@ app.use(
     achievementService,
   })
 );
+
+// The below error handling middle should always be at the bottom of the file so
+// it confirms that all middlewares are tried and finally throwing the error
+app.use((request, response, next) => {
+  return next(createError(404, 'Page not found'));
+});
+
+app.use((err, request, response, next) => {
+  response.locals.message = err.message;
+  const status = err.status || 500;
+  response.locals.status = status;
+  response.status(status);
+  response.render('error');
+  return next();
+});
 
 app.listen(port, () => {
   console.log(`Express server listening on port: ${port}`);
