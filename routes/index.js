@@ -6,13 +6,16 @@ const speakerRoute = require('./speakers');
 const feedbackRoute = require('./feedback');
 
 module.exports = (params) => {
-  router.get('/', (request, response) => {
+  router.get('/', (request, response, next) => {
     // if (!request.session.visitcount) {
     //   request.session.visitcount = 0;
     // }
     // request.session.visitcount += 1;
-
-    response.render('layout', { pageTitle: 'Welcome!', template: 'indexContent' });
+    try {
+      return response.render('layout', { pageTitle: 'Welcome!', template: 'indexContent' });
+    } catch (error) {
+      return next(error);
+    }
   });
 
   router.use('/blogposts', blogpostRoute());
