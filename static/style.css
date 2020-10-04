@@ -19,6 +19,40 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.maincontent {
+  line-height: 160%;
+  background-color: white;
+}
+.feedback-name {
+  font-size: 0.6em;
+  font-weight: 100;
+}
+
+.feedback-message {
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+.feedback-item {
+  border-bottom: 1px solid gray;
+  padding: 8px 0;
+}
+
+.feedback-title {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.feedback-form label {
+  font-weight: 400;
+}
+
+.feedback-item:last-of-type {
+  border-bottom: none;
+}
+
 /* --- Navigation Menu ------------------------------ */
 /* Overlay */
 .overlay {

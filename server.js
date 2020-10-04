@@ -5,6 +5,7 @@ const app = express();
 
 const port = 3050;
 const createError = require('http-errors');
+const bodyParser = require('body-parser');
 
 const routes = require('./routes');
 
@@ -23,6 +24,8 @@ app.use(
     keys: ['ts09eh5675', 'ap09bj0865'],
   })
 );
+
+app.use(bodyParser.urlencoded({ urlencoded: true }));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 
